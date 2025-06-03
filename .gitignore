@@ -45,3 +45,15 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# Maven target
+target/
+# Eclipse/IDEA and build directories
+*.iml
+.idea/
+*.classpath
+*.project
+.settings/
+# Old bin directory
+bin/
+
