@@ -17,12 +17,12 @@ public class Vector2f {
 		this.y = y;
 	}
 	
-	public float getDistance(Vector2f vecTo) {
-		double xDist = vecTo.x - x;
-		double yDist = vecTo.y = y;
-		
-		return (float) Math.sqrt(Math.pow(xDist, xDist) + Math.pow(yDist, yDist));
-	}
+        public float getDistance(Vector2f vecTo) {
+                double xDist = vecTo.x - x;
+                double yDist = vecTo.y - y;
+
+                return (float) Math.sqrt(Math.pow(xDist, 2) + Math.pow(yDist, 2));
+        }
 	
 	public Vector2f cpy() {
 		return new Vector2f(x, y);
